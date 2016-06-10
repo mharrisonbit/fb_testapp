@@ -22,9 +22,9 @@
 			}
 		});
 		
-		$('.user_clicked').click(function() {
-			console.log("button was clicked.");
-		});
+		// $('.user_clicked').click(function() {
+		// 	console.log("button was clicked.");
+		// });
 	};
 
 	(function(d, s, id){
@@ -40,6 +40,7 @@
 				FB.api('/me?fields=first_name', function(data) {
 				var welcomeBlock = document.getElementById('fb-welcome');
 				welcomeBlock.innerHTML = 'Hello, ' + data.first_name + '!';
+				console.log(data);
 			});
 		}
 	}
