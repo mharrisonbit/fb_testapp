@@ -3,10 +3,12 @@
 			FB.init({
 			appId      : '957403187706107',
 			xfbml      : true,
-			version    : 'v2.6'
+			version    : 'v2.6',
+			status     : true
 		});
 
 	// ADD ADDITIONAL FACEBOOK CODE HERE
+		
 		$('.user_clicked').click(function() {
 			console.log("button was clicked.");
 		});
