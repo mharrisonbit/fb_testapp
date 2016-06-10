@@ -22,9 +22,6 @@
 			}
 		});
 		
-		// $('.user_clicked').click(function() {
-		// 	console.log("button was clicked.");
-		// });
 	};
 
 	(function(d, s, id){
@@ -43,6 +40,10 @@
 				console.log(data);
 			});
 		}
+	}
+
+	function myFacebookLogin() {
+		FB.login(function(){}, {scope: 'publish_actions'});
 	}
 	
 })(jQuery);
