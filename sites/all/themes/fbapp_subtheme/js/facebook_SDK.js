@@ -42,7 +42,7 @@
 				var welcomeBlock = document.getElementById('fb-welcome');
 				welcomeBlock.innerHTML = 'Hello, ' + data.first_name + '!';
 				
-				console.log(data);
+				console.log(FB.api);
 			});
 			FB.login(function(){
 				FB.api('/me/feed', 'post', {message: 'Hello, world!'});
