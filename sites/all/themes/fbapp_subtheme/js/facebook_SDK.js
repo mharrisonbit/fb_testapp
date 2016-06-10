@@ -7,17 +7,21 @@
 		});
 
 	// ADD ADDITIONAL FACEBOOK CODE HERE
-	console.log("hello this is working");
+		$('.user_clicked').click(function() {
+			console.log("button was clicked.");
+		});
 	};
 
 	(function(d, s, id){
 		var js, fjs = d.getElementsByTagName(s)[0];
 		if (d.getElementById(id)) {return;}
 		js = d.createElement(s); js.id = id;
-		js.src = "http://connect.facebook.net/en_US/sdk.js";
+		js.src = "https://connect.facebook.net/en_US/sdk.js";
 		fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));
-
+	
+	
+	
 	function onLogin(response) {
 		if (response.status == 'connected') {
 			FB.api('/me?fields=first_name', function(data) {
@@ -26,6 +30,8 @@
 			});
 		}
 	}
+
+	
 
 	FB.getLoginStatus(function(response) {
 		// Check login status on load, and if the user is
