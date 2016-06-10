@@ -22,6 +22,10 @@
 			}
 		});
 		
+		function myFacebookLogin() {
+			FB.login(function(){}, {scope: 'publish_actions'});
+		}
+
 	};
 
 	(function(d, s, id){
@@ -42,8 +46,6 @@
 		}
 	}
 
-	function myFacebookLogin() {
-		FB.login(function(){}, {scope: 'publish_actions'});
-	}
+	
 	
 })(jQuery);
