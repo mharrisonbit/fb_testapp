@@ -4,7 +4,8 @@
 			appId      : '957403187706107',
 			xfbml      : true,
 			version    : 'v2.6',
-			status     : true
+			status     : true,
+			oauth      : true
 		});
 
 	// ADD ADDITIONAL FACEBOOK CODE HERE
