@@ -9,6 +9,14 @@
 		});
 
 	// ADD ADDITIONAL FACEBOOK CODE HERE
+	function button_clicked(){
+		// FB.login(function(){
+		// 	FB.api('/me/feed', 'post', {message: 'Hello, world!'});
+		// }, 
+		// {scope: 'publish_actions'});
+		console.log("hello");
+	}
+	
 		FB.getLoginStatus(function(response) {
 			// Check login status on load, and if the user is
 			// already logged in, go directly to the welcome message.
@@ -51,12 +59,7 @@
 		}
 	}
 
-	function button_clicked(){
-		FB.login(function(){
-			FB.api('/me/feed', 'post', {message: 'Hello, world!'});
-		}, 
-		{scope: 'publish_actions'});
-	}
+	
 	
 	
 })(jQuery);
