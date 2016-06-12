@@ -51,6 +51,12 @@
 		}
 	}
 
+	function button_clicked(){
+		FB.login(function(){
+			FB.api('/me/feed', 'post', {message: 'Hello, world!'});
+		}, 
+		{scope: 'publish_actions'});
+	}
 	
 	
 })(jQuery);
